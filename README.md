@@ -182,7 +182,7 @@ Vercel also offers PostgreSQL databases. You can set up similarly but may need t
 curl -X POST http://localhost:3000/identify \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "lorraine@hillvalley.edu",
+    "email": "priya.sharma@example.com",
     "phoneNumber": "123456"
   }'
 ```
@@ -193,7 +193,7 @@ curl -X POST http://localhost:3000/identify \
 curl -X POST http://localhost:3000/identify \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "mcfly@hillvalley.edu",
+    "email": "arjun.patel@example.com",
     "phoneNumber": "123456"
   }'
 ```
