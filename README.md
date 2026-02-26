@@ -153,28 +153,6 @@ If the request matches contacts linked to different primary contacts:
 - All other primary contacts become secondary, linked to the oldest primary
 - All contact information is consolidated and returned
 
-## Deployment
-
-### Render.com Deployment (Free Tier)
-
-1. Push your repository to GitHub
-2. Create a Render account and connect your GitHub repository
-3. Create a new PostgreSQL database on Render
-4. Create a new Web Service on Render:
-   - Connect your GitHub repo
-   - Set the build command: `npm install && npm run build`
-   - Set the start command: `npm start`
-   - Add environment variables:
-     - `DATABASE_URL`: Your PostgreSQL connection string from Render
-     - `NODE_ENV`: `production`
-     - `PORT`: `3000`
-5. Deploy and wait for completion
-
-Your API will be available at: `https://<service-name>.onrender.com/identify`
-
-### Vercel Deployment (Alternative)
-
-Vercel also offers PostgreSQL databases. You can set up similarly but may need to use a serverless function approach.
 
 ## Example Usage
 
